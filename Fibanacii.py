@@ -1,0 +1,19 @@
+n=int(input())
+n1=0
+n2=1
+c=0
+temp=0
+if(n==1):
+	print(n1)
+else:
+    if(n>0):
+    	print(n1)
+    	print(n2)
+    	c=2
+    	while(c<n):
+    		temp=n1+n2
+    		print(temp)
+    		n1=n2
+    		n2=temp
+    		c+=1
+    	
