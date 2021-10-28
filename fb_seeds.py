@@ -1,0 +1,10 @@
+seed=[0,1]
+m=int(input())
+if(m<=2):
+    print(seed[:m])
+else:
+    c=2
+    while(c<m):
+        seed.append(sum(seed[len(seed)-2:]))
+        c+=1
+    print(seed)
